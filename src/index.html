@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="bootstrap.min.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stonks</title>
+</head>
+<body>
+  <script src="./app.js"></script>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" data-ol-has-click-handler="">Billions</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="#" data-ol-has-click-handler="">Home
+              <span class="visually-hidden">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-ol-has-click-handler="">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-ol-has-click-handler="">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#" data-ol-has-click-handler="">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false" data-ol-has-click-handler="">Dropdown</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#" data-ol-has-click-handler="">Action</a>
+              <a class="dropdown-item" href="#" data-ol-has-click-handler="">Another action</a>
+              <a class="dropdown-item" href="#" data-ol-has-click-handler="">Something else here</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#" data-ol-has-click-handler="">Separated link</a>
+            </div>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-sm-2" type="text" placeholder="Search">
+          <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  
+    <h1>Dataset</h1>
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th scope="col">id</th>
+          <th scope="col">Symbol</th>
+          <th scope="col">Name</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr id="tickers"></tr>
+      </tbody>
+    </table>
+</body>
+</html>

@@ -21,12 +21,13 @@ from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
 
 app = FastAPI()
+from fastapi.encoders import jsonable_encoder
 templates = Jinja2Templates(directory="templates")
 
-@app.get("/", response_class=HTMLResponse)
-async def index(request: Request):
+@app.get("/get")
+async def get_tickers():
     #Pulls existing data from SQL database
     mycursor.execute("SELECT idTicker, symbol, name FROM tbl_ticker")
     rows = mycursor.fetchall()
-
-    return templates.TemplateResponse("index.html", {"request": request, "tickers": rows})
+    return rows
+    #return templates.TemplateResponse("index.html", {"request": request, "tickers": rows})
