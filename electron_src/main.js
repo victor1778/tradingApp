@@ -1,10 +1,10 @@
-const {app, BrowserWindow} = require('electron')
+const {app,BrowserWindow} = require('electron')
 
 function createWindow()
 {
     const win=new BrowserWindow({
-        width:900,
-        height:600
+        width:1920,
+        height:1080
     })
     win.loadFile('index.html')
 }
